@@ -1,0 +1,8 @@
+---
+- name: copy a file from master to lcient
+  hosts: windows
+  tasks:
+    - name: copy file
+      win_copy:
+        src: /etc/ansible/playbooks/anna1.txt
+        dest: C:\test\

@@ -1,0 +1,11 @@
+---
+- name: Include play after another play
+  hosts: r1soft windows
+  tasks: 
+    - debug:
+        msg: play1
+- name: Include play after another play
+  include: copy-centos.yml
+  name: include another play
+- include: copy_windows.yml
+ 

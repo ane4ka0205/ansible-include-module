@@ -1,0 +1,10 @@
+---
+- name: copy a file from master to lcient
+  hosts: r1soft
+  tasks:
+
+    - name: copy file3
+      copy:
+        src: /etc/ansible/playbooks/anna1.txt
+        dest: /root/
+
